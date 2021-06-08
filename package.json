@@ -14,7 +14,7 @@
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-image-gallery": "^1.1.1",
-    "react-star-rating": "^1.4.2"
+    "react-rating-stars-component": "^2.2.0"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^4.0.3",
