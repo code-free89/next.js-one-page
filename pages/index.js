@@ -70,7 +70,9 @@ export default function Home() {
 
       <HeroSection />
 
-      <LastseenSection />
+      <section id="lastseen" className="bg-gray-50 w-full my-5">
+        <LastseenSection className="bg-gray-50" />
+      </section>
 
       <section id="about" ref={aboutref}>
         <AboutSection />
