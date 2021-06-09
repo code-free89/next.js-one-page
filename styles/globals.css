@@ -5,3 +5,8 @@
 html {
   scroll-behavior: smooth;
 }
+
+.image-gallery-slide img {
+  width: 100%;
+  height: 500px;
+}
