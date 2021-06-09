@@ -1,5 +1,5 @@
 import React from 'react'
-import { Accordion, Button, Card } from 'react-bootstrap'
+import { Accordion} from 'react-bootstrap'
 import { faqdata } from '../../../mockdata/landing/faqsection'
 
 export default function FAQAccordion() {
