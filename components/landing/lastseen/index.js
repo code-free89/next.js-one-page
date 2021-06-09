@@ -8,7 +8,7 @@ export default function LastseenSection() {
       <div className={`w-full items-center grid grid-cols-${lastseen.length}`}>
         {
           lastseen.map((item, index) => (
-            <div key={`lastseen-${index}`} className="w-full flex justify-center">
+            <div key={`lastseen-${index}`} className="flex justify-center">
               <img alt="" src={item} className="h-8" />
             </div>
           ))
