@@ -27,7 +27,8 @@ export default function Details() {
       </div>
 
       <div className="w-full text-md space-y-4">
-        <ul className="font-semibold">Included in this kit:
+        <div className="font-semibold">Included in this kit:</div>
+        <ul className="pl-0">
         {
           product_information.included.map((item, index) => (
             <li key={`li-${index}`} className="font-light">{item}</li>
@@ -50,11 +51,11 @@ export default function Details() {
 
       <div className="w-full flex items-center space-x-6">
         <PaymentGateways />
-        <img src={"//cdn.shopify.com/s/files/1/0047/3907/2090/files/lpg-nortonIcon.jpg?v=1606107443"} className="h-12" />
+        <img alt="" src={"//cdn.shopify.com/s/files/1/0047/3907/2090/files/lpg-nortonIcon.jpg?v=1606107443"} className="h-12" />
       </div>
 
       <div className="w-full space-x-8 flex items-center">
-        <img src={product_information.awardImage} className="w-20 h-20 right-0 top-40" />
+        <img alt="" src={product_information.awardImage} className="w-20 h-20 right-0 top-40" />
         <div>
           {product_information.awardText}
         </div>
