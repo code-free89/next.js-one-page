@@ -64,6 +64,8 @@ export default function Home() {
       <Head>
         <title>Sales Page</title>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="preload" href="assets/images/about/lpg-neverJunkImg.jpg" as="image" />
+        <link rel="preload" href="assets/images/about/lpg-perfectCombo.jpg" as="image" />
       </Head>
 
       <NavBar onClick={scrollToSection} />

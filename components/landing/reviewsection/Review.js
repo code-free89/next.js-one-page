@@ -4,7 +4,7 @@ import StarRating from "../../common/StarRating";
 export default function Review(props) {
   return (
     <div className="flex flex-wrap justify-center items-start space-y-4">
-      <img src={props.avatarPath} className="w-16 h-16" alt="" />
+      <img src={props.avatarPath} className="w-24 h-24" alt="" />
       <div className="w-full flex justify-center">
         <StarRating />
       </div>

@@ -1,14 +1,14 @@
 export const productinformations = [
   {
-    imagePath: "//cdn.shopify.com/s/files/1/0047/3907/2090/files/lpg-bannerPointIcon1.jpg?v=1606107443",
+    imagePath: "assets/images/settings/lpg-bannerPointIcon1.png",
     title: "Sustainable products",
     description: "Organic, vegan & cruelty free",
   },{
-    imagePath: "//cdn.shopify.com/s/files/1/0047/3907/2090/files/lpg-bannerPointIcon2.jpg?v=1606107443",
+    imagePath: "assets/images/settings/lpg-bannerPointIcon2.png",
     title: "Free shipping",
     description: "on all orders over SEK 550",
   },{
-    imagePath: "//cdn.shopify.com/s/files/1/0047/3907/2090/files/lpg-bannerPointIcon3.jpg?v=1606107443",
+    imagePath: "assets/images/settings/lpg-bannerPointIcon3.png",
     title: "Made in Sweden",
     description: "Produced and packed",
   },
@@ -37,6 +37,6 @@ export const product_information = {
     "1x Organic Shampoo Thistle / Yuzu",
     "1x Organic Conditioner Thistle / Yuzu"
   ],
-  awardImage: "//cdn.shopify.com/s/files/1/0047/3907/2090/files/lpg-moneyBack.jpg?v=1606107443",
+  awardImage: "assets/images/hero/lpg-moneyBack.png",
   awardText: "Sweden - Free shipping over SEK 550."
 }

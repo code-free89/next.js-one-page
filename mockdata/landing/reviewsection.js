@@ -1,31 +1,31 @@
 export const reviews = [
   {
-    avatarPath: "//cdn.shopify.com/s/files/1/0047/3907/2090/files/Lovisa_Barkman_285ef4ef-9f5e-40b5-9dda-541e766d456b.png?v=1606144042",
+    avatarPath: "assets/images/reviews/Lovisa_Barkman.png",
     title: "Love these products!",
     description: "Have this fantastic kit at home and just wanted to take the opportunity to say this partly because I really like it but also because I thought they make a good initiative.",
     name: "Lovisa Barkman"
   },{
-    avatarPath: "//cdn.shopify.com/s/files/1/0047/3907/2090/files/Anitha_Clemence.png?v=1606144331",
+    avatarPath: "assets/images/reviews/Anitha_Clemence.png",
     title: "Love these products!",
     description: "So obsessed with these in feeling and smell",
     name: "Anitha Clemence"
   },{
-    avatarPath: "//cdn.shopify.com/s/files/1/0047/3907/2090/files/Linn_Herbertsson.png?v=1606144683",
+    avatarPath: "assets/images/reviews/Linn_Herbertsson.png",
     title: "Love these products!",
     description: "Love Underyourskin!",
     name: "Linn Herbertsson"
   },{
-    avatarPath: "//cdn.shopify.com/s/files/1/0047/3907/2090/files/Lovisa_Barkman_285ef4ef-9f5e-40b5-9dda-541e766d456b.png?v=1606144042",
+    avatarPath: "assets/images/reviews/Lovisa_Barkman.png",
     title: "Love these products!",
     description: "Have this fantastic kit at home and just wanted to take the opportunity to say this partly because I really like it but also because I thought they make a good initiative.",
     name: "Lovisa Barkman"
   },{
-    avatarPath: "//cdn.shopify.com/s/files/1/0047/3907/2090/files/Anitha_Clemence.png?v=1606144331",
+    avatarPath: "assets/images/reviews/Anitha_Clemence.png",
     title: "Love these products!",
     description: "So obsessed with these in feeling and smell",
     name: "Anitha Clemence"
   },{
-    avatarPath: "//cdn.shopify.com/s/files/1/0047/3907/2090/files/Linn_Herbertsson.png?v=1606144683",
+    avatarPath: "assets/images/reviews/Linn_Herbertsson.png",
     title: "Love these products!",
     description: "Love Underyourskin!",
     name: "Linn Herbertsson"
