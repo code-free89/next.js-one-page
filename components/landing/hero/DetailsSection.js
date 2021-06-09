@@ -4,7 +4,7 @@ import CustomButton from '../../common/Button'
 import StarRating from '../../common/StarRating'
 import PaymentGateways from './PaymentGateways'
 import ProductSettings from './ProductSettings'
-import Review from './Review'
+import Feedback from './Feedback'
 
 export default function DetailsSection() {
   return (
@@ -35,7 +35,7 @@ export default function DetailsSection() {
 
       <ProductSettings />
 
-      <Review avatarPath={review.avatarPath} title={review.title} description={review.description} />
+      <Feedback avatarPath={review.avatarPath} title={review.title} description={review.description} />
     </div>
   )
 }

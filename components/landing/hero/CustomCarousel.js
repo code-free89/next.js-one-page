@@ -4,8 +4,8 @@ import { product_details } from '../../../mockdata/herosection'
 
 export default function CustomCarousel() {
   return (
-    <div className="px-8">
-      <ImageGallery items={product_details.mockupImages} showFullscreenButton={false} useBrowserFullscreen={false} showPlayButton={false} />
+    <div className="px-8 mt-20">
+      <ImageGallery items={product_details.mockupImages} showFullscreenButton={false} useBrowserFullscreen={false} showPlayButton={false} lazyLoad={true} />
     </div>
   )
 }
