@@ -27,11 +27,19 @@ export default function IngredientSection() {
                         } w-4 h-4 ml-3`}
                       />
                     </Disclosure.Button>
-                    <div className={`${open ? 'transition-height' : ''} duration-1000 ease-in-out overflow-hidden`}>
-                      <div className={`p-5 text-sm text-gray-500 bg-secondary rounded-lg mt-2 ${open ? 'block' : 'hidden'}`}>
+                    <Transition
+                      show={open}
+                      enter="transition-height duration-500"
+                      enterFrom="h-0"
+                      enterTo="h-full"
+                      leave="transition-height duration-75"
+                      leaveFrom="h-full"
+                      leaveTo="h-0"
+                    >
+                      <div className={`p-5 text-sm text-gray-500 bg-secondary rounded-lg mt-2`}>
                         {item.list}
                       </div>
-                    </div>
+                    </Transition>
                   </>
                 )}
               </Disclosure>
