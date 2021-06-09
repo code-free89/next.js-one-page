@@ -80,7 +80,7 @@ export default function Home() {
         <WorkSection />
       </section>
 
-      <section id="ingredients" className="bg-primary" ref={ingredientsref}>
+      <section id="ingredients" className="bg-yellow-light" ref={ingredientsref}>
         <IngredientSection />
       </section>
 
@@ -92,13 +92,13 @@ export default function Home() {
         <ReviewSection />
       </section>
 
-      <section id="faq" className="bg-primary" ref={faqref}>
+      <section id="faq" className="bg-yellow-light" ref={faqref}>
         <FAQSection />
       </section>
 
       <InformationSection />
 
-      <section id="purchase" className="bg-primary">
+      <section id="purchase" className="bg-yellow-light">
         <PurchaseSection />
       </section>
 

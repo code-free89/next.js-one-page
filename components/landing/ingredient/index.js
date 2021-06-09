@@ -36,7 +36,7 @@ export default function IngredientSection() {
                       leaveFrom="h-full"
                       leaveTo="h-0"
                     >
-                      <div className={`p-5 text-sm text-gray-500 bg-secondary rounded-lg mt-2`}>
+                      <div className={`p-5 text-sm text-gray-500 bg-yellow-normal rounded-lg mt-2`}>
                         {item.list}
                       </div>
                     </Transition>

@@ -1,6 +1,6 @@
 const themeColors = {
-  "primary" : "#f1ede5",
-  "secondary" : "#e5d8cd",
+  "yellow-light" : "#f1ede5",
+  "yellow-normal" : "#e5d8cd",
 }
 
 module.exports = {
