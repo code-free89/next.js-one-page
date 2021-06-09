@@ -22,7 +22,7 @@ export default function DetailsSection() {
         {product_details.price} kr
       </div>
 
-      <img src={product_details.awardImage} className="absolute w-28 h-28 right-0 top-40" />
+      <img alt="" src={product_details.awardImage} className="absolute w-28 h-28 right-0 top-40" />
 
       <div className="w-full text-lg">
         {product_details.description}

@@ -26,7 +26,7 @@ export default function AdComponent(props) {
           }
         </div>
       </div>
-      <img src={props.imagePath} className={`h-700 ${props.direction === "left" ? "order-first mr-20" : "ml-20"}`} />
+      <img alt="" src={props.imagePath} className={`h-700 ${props.direction === "left" ? "order-first mr-20" : "ml-20"}`} />
     </div>
   )
 }
