@@ -17,7 +17,7 @@ export default function Ingredient(props) {
 
           <div className="w-full text-lg font-light" dangerouslySetInnerHTML={{ __html: props.data.subdescription }} />
         </div>
-        <img src={props.data.imagePath} className={`h-500 my-auto ${props.direction === "left" ? "order-first mr-20" : "ml-20"}`} />
+        {/* <img alt="" src={props.data.imagePath} className={`h-500 my-auto ${props.direction === "left" ? "order-first mr-20" : "ml-20"}`} /> */}
       </div>
 
       <div className="w-full max-w-4xl mx-auto">
