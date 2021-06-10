@@ -4,14 +4,14 @@ import ReactStars from "react-rating-stars-component";
 export default function StarRating() {
   const options = {
     count: 5,
-    size: 30,
+    size: 20,
     value: 5,
     edit: false,
-    activeColor:"#ffd700"
+    activeColor:"#ddb499"
   };
 
   return (
-    <div>
+    <div className="pt-3">
       <ReactStars {...options} />
     </div>
   )

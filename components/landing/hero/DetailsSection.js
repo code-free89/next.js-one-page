@@ -11,10 +11,10 @@ export default function DetailsSection() {
     <div className="px-8 space-y-8 relative">
       <div className="w-full flex items-center space-x-5">
         <StarRating />
-        <div className="text-lg">{product_details.reviews} reviews</div>
+        <div className="text-md pt-3">{product_details.reviews} reviews</div>
       </div>
       
-      <div className="w-full text-6xl font-extrabold">
+      <div className="w-full text-6xl font-bold">
         {product_details.title}
       </div>
 
@@ -29,7 +29,7 @@ export default function DetailsSection() {
       </div>
 
       <div className="w-full flex items-center space-x-6">
-        <CustomButton label="BUY DETOX KIT" />
+        <CustomButton label="BUY DETOX KIT" className="px-11 py-3" />
         <PaymentGateways />
       </div>
 

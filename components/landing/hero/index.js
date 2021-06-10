@@ -4,10 +4,12 @@ import DetailsSection from './DetailsSection'
 
 export default function HeroSection() {
   return (
-    <div className="grid grid-cols-2 w-full max-w-7xl mx-auto">
+    <div className="grid grid-cols-2 w-full">
       <CustomCarousel />
       
-      <DetailsSection />
+      <div className="pl-20 pr-40">
+        <DetailsSection />
+      </div>
     </div>
   )
 }

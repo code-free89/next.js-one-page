@@ -6,7 +6,7 @@ export default function CustomButton(props) {
   return (
     <button
       type="button"
-      className={classNames("inline-flex items-center justify-center min-w-max px-6 py-4 border border-transparent text-lg font-medium rounded-md hover:shadow-xl text-white bg-black focus:outline-none focus:ring-none", props.className)}
+      className={classNames("inline-flex items-center justify-center min-w-max border border-transparent text-lg font-medium rounded-md hover:shadow-xl text-white bg-black focus:outline-none focus:ring-none", props.className)}
     >
       {props.label}
       <ArrowRightIcon className="w-5 h-5 ml-4" />
