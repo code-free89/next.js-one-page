@@ -1,8 +1,8 @@
-import '../styles/globals.css'
-import "react-image-gallery/styles/css/image-gallery.css";
-import "slick-carousel/slick/slick.css"; 
+import "../styles/globals.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "flickity/css/flickity.css";
 
 function App({ Component, pageProps }) {
   return <Component {...pageProps} />;

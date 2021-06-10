@@ -31,7 +31,11 @@ module.exports = {
     extend: {
       height: {
         '700' : '700px',
+        '600' : '600px',
         '500' : '500px',
+      },
+      maxWidth: {
+        '200': '200px'
       },
       backgroundImage: theme => ({
         'revolution': "url('/assets/images/revolution.png')",

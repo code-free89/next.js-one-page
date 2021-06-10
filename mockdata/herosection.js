@@ -1,21 +1,9 @@
 export const product_details = {
   mockupImages: [
-    {
-      original: 'assets/images/hero/carousel/HERO_IMAGE_-_Image_1_660x.png',
-      thumbnail: 'assets/images/hero/carousel/HERO_IMAGE_-_Image_1_660x.png',
-    },
-    {
-      original: 'assets/images/hero/carousel/Image_2_660x.jpeg',
-      thumbnail: 'assets/images/hero/carousel/Image_2_660x.jpeg'
-    },
-    {
-      original: 'assets/images/hero/carousel/Image_4_660x.jpg',
-      thumbnail: 'assets/images/hero/carousel/Image_4_660x.jpg'
-    },
-    {
-      original: 'assets/images/hero/carousel/Image_5_ENG_660x.png',
-      thumbnail: 'assets/images/hero/carousel/Image_5_ENG_660x.png'
-    }
+    'assets/images/hero/carousel/HERO_IMAGE_-_Image_1_660x.png',
+    'assets/images/hero/carousel/Image_2_660x.jpeg',
+    'assets/images/hero/carousel/Image_4_660x.jpg',
+    'assets/images/hero/carousel/Image_5_ENG_660x.png',
   ],
   reviews: 137,
   title: "Organic Detox: Shampoo & Conditioner",

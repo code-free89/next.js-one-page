@@ -1,26 +1,27 @@
-import React, { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
+import React, { Fragment } from "react";
+import { Disclosure, Menu, Transition } from "@headlessui/react";
+import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 
 const navigation = [
-  { name: 'About the Products', href: 'about', current: true },
-  { name: 'How a detox works', href: 'howworks', current: false },
-  { name: 'Ingredients', href: 'ingredients', current: false },
-  { name: 'Reviews', href: 'reviews', current: false },
-  { name: 'FAQ', href: 'faq', current: false },
-]
+  { name: "About the Products", href: "about", current: true },
+  { name: "How a detox works", href: "howworks", current: false },
+  { name: "Ingredients", href: "ingredients", current: false },
+  { name: "Reviews", href: "reviews", current: false },
+  { name: "FAQ", href: "faq", current: false },
+];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
 }
 
 export default function NavBar(props) {
   return (
-    <Disclosure as="nav" className="bg-gray-800">
+    <Disclosure as="nav">
       {({ open }) => (
         <>
-          <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-            <div className="relative flex items-center justify-between h-16">
+          <div className="py-8 relative">
+            <div className="absolute left-0 top-0 bg-yellow-light h-full w-2/5"></div>
+            <div className="relative flex items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
                 <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
@@ -32,30 +33,28 @@ export default function NavBar(props) {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex-1 flex items-center justify-between sm:items-stretch">
-                <div className="flex-shrink-0 flex items-center">
+              <div className="flex-1 flex items-center justify-between sm:items-stretch container">
+                <div className="flex items-center justify-center">
                   <img
-                    className="block lg:hidden h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
-                    alt="Workflow"
+                    data-src="//cdn.shopify.com/s/files/1/0047/3907/2090/files/lpg-logo.jpg?v=1606107443"
+                    className="lazyloaded h-8"
+                    alt="Logo"
+                    src="//cdn.shopify.com/s/files/1/0047/3907/2090/files/lpg-logo.jpg?v=1606107443"
                   />
-                  <img
-                    className="hidden lg:block h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
-                    alt="Workflow"
-                  />
+                  <div className="text-lg max-w-200 pl-6">
+                    Made in Sweden, organic, vegan & cruelty free
+                  </div>
                 </div>
                 <div className="hidden sm:block sm:ml-6">
-                  <div className="flex space-x-4">
+                  <div className="flex items-center space-x-4">
                     {navigation.map((item) => (
                       <div
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          'text-gray-300 hover:bg-gray-700 hover:text-white',
-                          'px-3 py-2 rounded-md text-sm font-medium cursor-pointer'
+                          "text-lg px-3 py-2 rounded-md text-sm cursor-pointer"
                         )}
-                        aria-current={item.current ? 'page' : undefined}
+                        aria-current={item.current ? "page" : undefined}
                         href={item.href}
                         onClick={props.onClick}
                       >
@@ -75,10 +74,12 @@ export default function NavBar(props) {
                   key={item.name}
                   href={item.href}
                   className={classNames(
-                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                    'block px-3 py-2 rounded-md text-base font-medium'
+                    item.current
+                      ? "bg-gray-900 text-white"
+                      : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                    "block px-3 py-2 rounded-md text-base font-medium"
                   )}
-                  aria-current={item.current ? 'page' : undefined}
+                  aria-current={item.current ? "page" : undefined}
                   onClick={props.onClick}
                 >
                   {item.name}
@@ -89,5 +90,5 @@ export default function NavBar(props) {
         </>
       )}
     </Disclosure>
-  )
+  );
 }

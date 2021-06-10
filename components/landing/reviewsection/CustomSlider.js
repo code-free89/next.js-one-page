@@ -7,14 +7,14 @@ import Review from "./Review";
 function SampleNextArrow(props) {
   const { onClick } = props;
   return (
-    <ArrowRightIcon className="text-secondary w-6 h-6 absolute right-0 top-20 z-50" onClick={onClick} />
+    <ArrowRightIcon className="text-secondary w-6 h-6 absolute right-0 top-20 z-50 cursor-pointer" onClick={onClick} />
   );
 }
 
 function SamplePrevArrow(props) {
   const { onClick } = props;
   return (
-    <ArrowLeftIcon className="text-secondary w-6 h-6 absolute left-0 top-20 z-50" onClick={onClick} />
+    <ArrowLeftIcon className="text-secondary w-6 h-6 absolute left-0 top-20 z-50 cursor-pointer" onClick={onClick} />
   );
 }
 
