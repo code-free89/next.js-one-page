@@ -9,9 +9,9 @@ import Feedback from './Feedback'
 export default function DetailsSection() {
   return (
     <div className="px-8 space-y-8 relative">
-      <div className="w-full flex items-center space-x-5">
+      <div className="w-full flex items-center space-x-5 mt-3">
         <StarRating />
-        <div className="text-md pt-3">{product_details.reviews} reviews</div>
+        <div className="text-md">{product_details.reviews} reviews</div>
       </div>
       
       <div className="w-full text-6xl font-bold">

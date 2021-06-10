@@ -4,7 +4,7 @@ import AdComponent from './AdComponent'
 
 export default function AboutSection() {
   return (
-    <div>
+    <div className="max-w-1920">
       {
         ads.map((item, index) => (
           <div key={`AD-${index}`} className="w-full">

@@ -11,7 +11,7 @@ export default function StarRating() {
   };
 
   return (
-    <div className="pt-3">
+    <div>
       <ReactStars {...options} />
     </div>
   )

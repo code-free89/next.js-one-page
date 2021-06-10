@@ -72,7 +72,7 @@ export default function Home() {
 
       <HeroSection />
 
-      <section id="lastseen" className="bg-gray-50 w-full my-5">
+      <section id="lastseen" className="bg-gray-50 w-full mt-5">
         <LastseenSection className="bg-gray-50" />
       </section>
 
