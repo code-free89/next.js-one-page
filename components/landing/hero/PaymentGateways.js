@@ -4,7 +4,7 @@ import { paymentGateways } from '../../../mockdata/herosection'
 export default function PaymentGateways() {
   return (
     <div>
-      <img alt="" src={paymentGateways} />
+      <img alt="" src={paymentGateways} className="sm:w-max w-full" />
     </div>
   )
 }

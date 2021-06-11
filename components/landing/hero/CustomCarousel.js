@@ -63,7 +63,7 @@ export default function CustomCarousel() {
         >
           {
             product_details.mockupImages.map((item, index) => (
-              <div key={`main-slider-${index}`} className="w-full h-600">
+              <div key={`main-slider-${index}`} className="w-full sm:h-600 h-80">
                 <img alt="" src={item} className="h-full mx-auto" />
               </div>
             ))
@@ -72,18 +72,18 @@ export default function CustomCarousel() {
         <Slider
           asNavFor={mainslider}
           ref={slider => (setthumbnailslider(slider))}
-          className="mt-12 mr-32"
+          className="sm:mt-12 sm:mr-32 mt-8 mr-24"
           {...thumbSettings}
         >
           {
             product_details.mockupImages.map((item, index) => (
               <div key={`main-slider-${index}`} className="w-full">
-                <img alt="" src={item} className="w-20 h-20 mx-auto" />
+                <img alt="" src={item} className="sm:w-20 sm:h-20 w-12 h-12 mx-auto" />
               </div>
             ))
           }
         </Slider>
-        <div className="absolute right-0 bottom-10 flex items-center space-x-8">
+        <div className="absolute right-0 sm:bottom-10 bottom-5 flex items-center space-x-8">
           <ArrowLeftIcon className="w-5 h-5 text-lg cursor-pointer" onClick={prevImage} />
           <ArrowRightIcon className="w-5 h-5 text-lg cursor-pointer" onClick={nextImage} />
         </div>

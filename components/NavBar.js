@@ -19,7 +19,7 @@ export default function NavBar(props) {
     <Disclosure as="nav">
       {({ open }) => (
         <>
-          <div className="py-8 relative">
+          <div className="sm:py-8 py-6 relative sm:bg-white bg-yellow-light">
             <div className="absolute left-0 top-0 bg-yellow-light h-full w-2/5"></div>
             <div className="relative flex items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -33,7 +33,7 @@ export default function NavBar(props) {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex-1 flex items-center justify-between sm:items-stretch container">
+              <div className="flex-1 flex items-center justify-between sm:items-stretch sm:container mx-auto sm:px-20 pl-12">
                 <div className="flex items-center justify-center">
                   <img
                     data-src="//cdn.shopify.com/s/files/1/0047/3907/2090/files/lpg-logo.jpg?v=1606107443"
@@ -41,7 +41,7 @@ export default function NavBar(props) {
                     alt="Logo"
                     src="//cdn.shopify.com/s/files/1/0047/3907/2090/files/lpg-logo.jpg?v=1606107443"
                   />
-                  <div className="text-lg max-w-200 pl-6">
+                  <div className="sm:text-lg text-sm max-w-200 pl-6">
                     Made in Sweden, organic, vegan & cruelty free
                   </div>
                 </div>
@@ -74,12 +74,10 @@ export default function NavBar(props) {
                   key={item.name}
                   href={item.href}
                   className={classNames(
-                    item.current
-                      ? "bg-gray-900 text-white"
-                      : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                    "block px-3 py-2 rounded-md text-base font-medium"
+                    "text-lg px-3 py-2 rounded-md text-sm cursor-pointer"
                   )}
                   aria-current={item.current ? "page" : undefined}
+                  href={item.href}
                   onClick={props.onClick}
                 >
                   {item.name}

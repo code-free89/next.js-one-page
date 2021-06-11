@@ -33,6 +33,7 @@ export default function Home() {
 
   const scrollToSection = (e) => {
     let target = e.target.getAttribute("href");
+    console.log(aboutref);
     switch (target) {
       case "about":
         window.scrollTo(0, aboutref.current.offsetTop);
@@ -71,7 +72,7 @@ export default function Home() {
       <NavBar onClick={scrollToSection} />
 
       <HeroSection />
-
+{/* 
       <section id="lastseen" className="bg-gray-50 w-full mt-5">
         <LastseenSection className="bg-gray-50" />
       </section>
@@ -126,7 +127,7 @@ export default function Home() {
         >
           <ArrowNarrowUpIcon className="w-6 h-6" />
         </div>
-      </Transition>
+      </Transition> */}
     </div>
   );
 }
