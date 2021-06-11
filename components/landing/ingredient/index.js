@@ -50,10 +50,10 @@ export default function IngredientSection() {
       <div className="w-full flex flex-wrap justify-center text-center">
         <div className="w-full text-2xl font-bold">What are you waiting for?</div>
         <div className="w-full text-2xl font-light">Get this kit for only SEK 569</div>
-        <div className="my-4 text-center w-full">
-          <CustomButton label="BUY DETOX KIT" />
+        <div className="my-4 text-center w-full h-16">
+          <CustomButton label="BUY DETOX KIT" className="px-11 py-3" />
         </div>
-        <div className="w-full flex items-center justify-center space-x-5">
+        <div className="w-full flex items-center justify-center space-x-8">
           <StarRating />
           <div className="text-lg">{product_details.reviews} reviews</div>
         </div>

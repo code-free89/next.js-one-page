@@ -88,7 +88,7 @@ export default function Home() {
         <IngredientSection />
       </section>
 
-      <section className="bg-revolution bg-cover">
+      <section className="">
         <RevolutionSection />
       </section>
 
