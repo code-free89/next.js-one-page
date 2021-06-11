@@ -17,8 +17,8 @@ export default function Details() {
         {product_information.title}
       </div>
 
-      <div className="w-full text-3xl text-green-500">
-        {product_information.price} kr
+      <div className="w-full text-3xl text-gray-700">
+        Now {product_information.price} kr
       </div>
 
 
@@ -28,7 +28,7 @@ export default function Details() {
 
       <div className="w-full text-md space-y-4">
         <div className="font-semibold">Included in this kit:</div>
-        <ul className="pl-0">
+        <ul className="pl-1">
         {
           product_information.included.map((item, index) => (
             <li key={`li-${index}`} className="font-light">{item}</li>
@@ -39,13 +39,13 @@ export default function Details() {
 
       <div className="w-full text-md space-y-4">
         <div className="font-semibold">Select quantity:</div>
-        <div className="space-x-8 flex justify-between">
-          <div className="bg-white rounded-md w-full h-full grid grid-cols-3 text-lg py-4">
-            <div className="text-center cursor-pointer" onClick={()=>{setquantity(quantity - 1)}}>-</div>
-            <div className="text-center">{quantity}</div>
-            <div className="text-center cursor-pointer" onClick={()=>{setquantity(quantity + 1)}}>+</div>
+        <div className="space-x-8 flex items-center h-16">
+          <div className="bg-white rounded-md w-36 h-full grid grid-cols-3 text-lg">
+            <div className="text-center cursor-pointer my-auto" onClick={()=>{setquantity(quantity - 1)}}>-</div>
+            <div className="text-center my-auto">{quantity}</div>
+            <div className="text-center cursor-pointer my-auto" onClick={()=>{setquantity(quantity + 1)}}>+</div>
           </div>
-          <CustomButton label="BUY NOW FOR SEK 569" />
+          <CustomButton label="BUY NOW FOR SEK 569" className="h-16 px-11" />
         </div>
       </div>
 

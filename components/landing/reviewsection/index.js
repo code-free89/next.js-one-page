@@ -6,7 +6,7 @@ import Masonry from 'react-masonry-css'
 
 export default function ReviewSection() {
   const breakpointColumnsObj = {
-    default: 4,
+    default: 5,
     1100: 3,
     700: 2,
     500: 1
