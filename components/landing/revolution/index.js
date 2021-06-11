@@ -15,11 +15,11 @@ export default function RevolutionSection() {
   return (
     <div className="text-center">
       <div className="py-12 pb-80">
-        <div className="container space-y-8">
-          <div className="w-full text-5xl font-bold">
+        <div className="container smspace-y-8 space-y-4">
+          <div className="w-full sm:text-5xl text-2xl font-bold">
             Revolution in a bottle
           </div>
-          <div className="w-full text-xl max-w-4xl mx-auto">
+          <div className="w-full sm:text-xl text-md max-w-4xl mx-auto">
             We want to eliminate harmful chemicals in skin care We want to
             eliminate harmful chemicals from skincare. The revolution starts
             here, with products that really work.
@@ -28,23 +28,23 @@ export default function RevolutionSection() {
       </div>
       <div className="py-12 bg-yellow-light">
         <div className="max-w-6xl mx-auto w-full -mt-80 relative flex justify-center">
-          <img alt="" src={imagePath} className="w-full h-500" />
-          <div className="absolute top-36 w-full max-w-xl flex flex-wrap justify-center">
+          <img alt="" src={imagePath} className="w-full sm:h-500 h-80" />
+          <div className="absolute sm:top-36 top-24 w-full max-w-xl flex flex-wrap justify-center">
             <PlayIcon
-              className="w-20 h-20 text-white cursor-pointer"
+              className="sm:w-20 sm:h-20 w-12 h-12 text-white cursor-pointer"
               onClick={()=>{setopenVideo(true);}}
             />
-            <div className="w-full text-center text-white text-5xl font-extrabold">
+            <div className="w-full text-center text-white sm:text-5xl text-2xl font-extrabold">
               It is important to take care of your scalp & your hair
             </div>
           </div>
         </div>
-        <div className="w-full grid grid-cols-2 gap-x-16 container mt-10">
-          <div className="text-lg flex justify-end w-full">
+        <div className="w-full grid sm:grid-cols-2 grid-cols-1 sm:gap-x-16 sm:gap-y-0 gap-y-4 container mt-10 sm:text-lg text-sm">
+          <div className="flex justify-end w-full">
             <div className="text-left max-w-md">{revolution_description}</div>
           </div>
 
-          <div className="text-lg flex w-full">
+          <div className="flex w-full">
             <div className="text-left max-w-md">
               {revolution_options.map((item, index) => (
                 <div
@@ -52,7 +52,7 @@ export default function RevolutionSection() {
                   key={`option-${index}`}
                 >
                   <CheckIcon className="text-secondary font-dark w-5 h-5 mr-4" />
-                  <div className="text-lg font-semibold">{item}</div>
+                  <div className="sm:text-lg text-sm font-semibold">{item}</div>
                 </div>
               ))}
             </div>
@@ -66,12 +66,10 @@ export default function RevolutionSection() {
           <ReactPlayer
             url={videoPath}
             controls={true}
-            width={"60%"}
-            height={"35rem"}
-            className="z-50"
+            className="z-50 sm:w-2/3 w-3/4 sm:h-80 h-40"
           />
           <div
-            className="w-8 h-8 bg-black text-white absolute right-10 top-5 cursor-pointer z-50 flex items-center justify-center"
+            className="w-8 h-8 bg-black text-white absolute sm:right-10 right-5 top-5 cursor-pointer z-50 flex items-center justify-center"
             onClick={() => {
               setopenVideo(false);
             }}

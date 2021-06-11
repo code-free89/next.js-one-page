@@ -9,10 +9,10 @@ export default function ReviewCard(props) {
         <div className="w-full">
           <StarRating />
         </div>
-        <div className="w-full font-bold text-xl">
+        <div className="w-full font-bold sm:text-xl text-sm">
           {props.data.name}
         </div>
-        <div className="w-full font-light text-md">
+        <div className="w-full font-light sm:text-md text-xs">
           {props.data.review}
         </div>
       </div>

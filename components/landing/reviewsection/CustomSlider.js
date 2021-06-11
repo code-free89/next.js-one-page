@@ -7,14 +7,14 @@ import Review from "./Review";
 function SampleNextArrow(props) {
   const { onClick } = props;
   return (
-    <ArrowRightIcon className="text-secondary w-6 h-6 absolute right-0 top-20 z-50 cursor-pointer" onClick={onClick} />
+    <ArrowRightIcon className="text-yellow-normal w-6 h-6 absolute right-0 top-20 z-50 cursor-pointer" onClick={onClick} />
   );
 }
 
 function SamplePrevArrow(props) {
   const { onClick } = props;
   return (
-    <ArrowLeftIcon className="text-secondary w-6 h-6 absolute left-0 top-20 z-50 cursor-pointer" onClick={onClick} />
+    <ArrowLeftIcon className="text-yellow-normal w-6 h-6 absolute left-0 top-20 z-50 cursor-pointer" onClick={onClick} />
   );
 }
 
@@ -24,7 +24,16 @@ const settings = {
   slidesToShow: 3,
   slidesToScroll: 1,
   nextArrow: <SampleNextArrow />,
-  prevArrow: <SamplePrevArrow />
+  prevArrow: <SamplePrevArrow />,
+  responsive: [
+    {
+      breakpoint: 400,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
 };
 
 export default function CustomSlider() {

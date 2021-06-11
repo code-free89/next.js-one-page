@@ -92,15 +92,15 @@ export default function Home() {
       <section className="">
         <RevolutionSection />
       </section>
-{/*
+
       <section id="reviews" ref={reviewsref} className="max-w-1920 mx-auto px-8">
         <ReviewSection />
       </section>
 
-      <section id="faq" className="bg-yellow-light" ref={faqref}>
+      <section id="faq" className="bg-yellow-light sm:mt-0 mt-5" ref={faqref}>
         <FAQSection />
       </section>
-
+{/*
       <InformationSection />
 
       <section id="purchase" className="bg-yellow-light">
