@@ -102,11 +102,11 @@ export default function Home() {
       </section>
 
       <InformationSection />
-{/*
+
       <section id="purchase" className="bg-yellow-light">
         <PurchaseSection />
       </section>
-
+{/*
       <Footer />
 
       <Transition

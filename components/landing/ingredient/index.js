@@ -51,7 +51,7 @@ export default function IngredientSection() {
         <div className="w-full sm:text-2xl text-lg font-bold">What are you waiting for?</div>
         <div className="w-full sm:text-2xl text-lg font-light">Get this kit for only SEK 569</div>
         <div className="my-4 text-center w-full h-16">
-          <CustomButton label="BUY DETOX KIT" className="px-11 py-3 sm:w-auto w-full" />
+          <CustomButton label="BUY DETOX KIT" className="px-11 py-3 sm:w-auto w-full text-lg" />
         </div>
         <div className="w-full flex items-center justify-center space-x-8">
           <StarRating />

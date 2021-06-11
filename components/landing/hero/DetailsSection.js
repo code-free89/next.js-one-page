@@ -29,7 +29,7 @@ export default function DetailsSection() {
       </div>
 
       <div className="w-full flex sm:flex-nowrap flex-wrap items-center sm:space-x-6 sm:space-y-0 space-y-2">
-        <CustomButton label="BUY DETOX KIT" className="px-11 py-3 sm:w-max w-full" />
+        <CustomButton label="BUY DETOX KIT" className="px-11 py-3 sm:w-max w-full text-lg" />
         <PaymentGateways />
       </div>
 

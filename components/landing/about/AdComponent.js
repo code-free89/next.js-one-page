@@ -29,7 +29,7 @@ export default function AdComponent(props) {
         {props.label && (
           <div className="w-full sm:flex sm:space-x-12 sm:h-16 sm:space-y-0 space-y-3">
             {props.label ? (
-              <CustomButton label={props.label} className="px-11 py-3 sm:w-auto w-full" />
+              <CustomButton label={props.label} className="px-11 py-3 sm:w-auto w-full text-lg" />
             ) : (
               <></>
             )}
