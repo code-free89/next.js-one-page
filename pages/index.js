@@ -80,11 +80,11 @@ export default function Home() {
       <section id="about" ref={aboutref}>
         <AboutSection />
       </section>
-{/*
+
       <section id="howworks" ref={howworksref}>
         <WorkSection />
       </section>
-
+{/*
       <section id="ingredients" className="bg-yellow-light" ref={ingredientsref}>
         <IngredientSection />
       </section>
