@@ -72,7 +72,7 @@ export default function Home() {
       <NavBar onClick={scrollToSection} />
 
       <HeroSection />
-{/* 
+ 
       <section id="lastseen" className="bg-gray-50 w-full mt-5">
         <LastseenSection className="bg-gray-50" />
       </section>
@@ -80,7 +80,7 @@ export default function Home() {
       <section id="about" ref={aboutref}>
         <AboutSection />
       </section>
-
+{/*
       <section id="howworks" ref={howworksref}>
         <WorkSection />
       </section>
