@@ -100,9 +100,9 @@ export default function Home() {
       <section id="faq" className="bg-yellow-light sm:mt-0 mt-5" ref={faqref}>
         <FAQSection />
       </section>
-{/*
-      <InformationSection />
 
+      <InformationSection />
+{/*
       <section id="purchase" className="bg-yellow-light">
         <PurchaseSection />
       </section>
