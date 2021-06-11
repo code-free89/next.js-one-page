@@ -84,7 +84,7 @@ export default function Home() {
       <section id="howworks" ref={howworksref}>
         <WorkSection />
       </section>
-{/*
+
       <section id="ingredients" className="bg-yellow-light" ref={ingredientsref}>
         <IngredientSection />
       </section>
@@ -92,7 +92,7 @@ export default function Home() {
       <section className="">
         <RevolutionSection />
       </section>
-
+{/*
       <section id="reviews" ref={reviewsref} className="max-w-1920 mx-auto px-8">
         <ReviewSection />
       </section>

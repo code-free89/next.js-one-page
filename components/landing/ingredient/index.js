@@ -9,9 +9,9 @@ import Ingredient from './Ingredient'
 
 export default function IngredientSection() {
   return (
-    <div className="px-20 py-12 container mx-auto space-y-8">
-      <div className="w-full text-5xl font-bold text-center">About the Products</div>
-      <div className="w-full text-xl max-w-lg mx-auto text-center">Under Your Skin uses advanced stem cell technology to extract the antioxidant-rich extract from milk thistle.</div>
+    <div className="px-20 py-12 container mx-auto sm:space-y-8 space-y-4">
+      <div className="w-full sm:text-5xl text-3xl font-bold text-center">About the Products</div>
+      <div className="w-full sm:text-xl text-md max-w-lg mx-auto text-center">Under Your Skin uses advanced stem cell technology to extract the antioxidant-rich extract from milk thistle.</div>
       <div className="space-y-12">
         {
           ingredients.map((item, index) => (
@@ -36,7 +36,7 @@ export default function IngredientSection() {
                       leaveFrom="h-full"
                       leaveTo="h-0"
                     >
-                      <div className={`p-5 text-sm text-gray-500 bg-yellow-normal rounded-lg mt-2`}>
+                      <div className={`sm:p-5 p-3 sm:text-sm text-xs text-gray-500 bg-yellow-normal rounded-lg mt-2`}>
                         {item.list}
                       </div>
                     </Transition>
@@ -48,10 +48,10 @@ export default function IngredientSection() {
         }
       </div>
       <div className="w-full flex flex-wrap justify-center text-center">
-        <div className="w-full text-2xl font-bold">What are you waiting for?</div>
-        <div className="w-full text-2xl font-light">Get this kit for only SEK 569</div>
+        <div className="w-full sm:text-2xl text-lg font-bold">What are you waiting for?</div>
+        <div className="w-full sm:text-2xl text-lg font-light">Get this kit for only SEK 569</div>
         <div className="my-4 text-center w-full h-16">
-          <CustomButton label="BUY DETOX KIT" className="px-11 py-3" />
+          <CustomButton label="BUY DETOX KIT" className="px-11 py-3 sm:w-auto w-full" />
         </div>
         <div className="w-full flex items-center justify-center space-x-8">
           <StarRating />
