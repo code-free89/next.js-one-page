@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { reviewcards } from "../../../mockdata/landing/reviewsection";
 import CustomSlider from "./CustomSlider";
 import ReviewCard from "./ReviewCard";
@@ -6,6 +6,34 @@ import Masonry from "react-masonry-css";
 import Slider from "react-slick";
 
 export default function ReviewSection() {
+  const [windowSize, setWindowSize] = useState({
+    width: undefined,
+    height: undefined,
+  })
+
+  useEffect(() => {
+    // only execute all the code below in client side
+    if (typeof window !== 'undefined') {
+      // Handler to call on window resize
+      function handleResize() {
+        // Set window width/height to state
+        setWindowSize({
+          width: window.innerWidth,
+          height: window.innerHeight,
+        });
+      }
+    
+      // Add event listener
+      window.addEventListener("resize", handleResize);
+     
+      // Call handler right away so state gets updated with initial window size
+      handleResize();
+    
+      // Remove event listener on cleanup
+      return () => window.removeEventListener("resize", handleResize);
+    }
+  }, []);
+
   const breakpointColumnsObj = {
     default: 5,
     1100: 3,
@@ -34,7 +62,7 @@ export default function ReviewSection() {
           10 customer reviews
         </div>
       </div>
-      {window.innerWidth > 400 && (
+      {windowSize.width > 400 && (
         <div className="w-full">
           <Masonry
             breakpointCols={breakpointColumnsObj}
@@ -47,7 +75,7 @@ export default function ReviewSection() {
           </Masonry>
         </div>
       )}
-      {window.innerWidth < 600 && (
+      {windowSize.width < 600 && (
         <div className="w-full">
           <Slider {...settings}>
             {

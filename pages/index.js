@@ -106,7 +106,7 @@ export default function Home() {
       <section id="purchase" className="bg-yellow-light">
         <PurchaseSection />
       </section>
-{/*
+
       <Footer />
 
       <Transition
@@ -119,15 +119,15 @@ export default function Home() {
         leaveTo="opacity-0"
       >
         <div
-          className="fixed bottom-8 right-8 w-12 h-12 rounded-md bg-gray-600 text-white cursor-pointer hover:shadow-md flex items-center justify-center transition duration-500 ease-in-out hover:bg-black"
+          className="fixed bottom-8 right-8 sm:w-12 sm:h-12 w-8 h-8 rounded-md bg-gray-600 text-white cursor-pointer hover:shadow-md flex items-center justify-center transition duration-500 ease-in-out hover:bg-black"
           onClick={() => {
             window.scrollTo(0, 0);
             setcurPos(0);
           }}
         >
-          <ArrowNarrowUpIcon className="w-6 h-6" />
+          <ArrowNarrowUpIcon className="sm:w-6 sm:h-6 w-4 h-4" />
         </div>
-      </Transition> */}
+      </Transition>
     </div>
   );
 }

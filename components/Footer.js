@@ -14,19 +14,19 @@ export default function Footer() {
   }
   return (
     <div className="bg-black">
-      <div className="px-20 py-8 container mx-auto flex items-center justify-between">
-        <div className="flex items-center space-x-8">
+      <div className="px-20 py-8 container mx-auto flex sm:flex-nowrap flex-wrap items-center justify-between">
+        <div className="flex items-center space-x-8 w-full justify-between">
           <img
             alt=""
             src={
               "//cdn.shopify.com/s/files/1/0047/3907/2090/files/lpg-logo2.jpg?v=10382854549988201948"
             }
-            className="h-12"
+            className="sm:h-12 h-8"
           />
-          <div className="text-white text-sm">© UNDERYOURSKINSTHLM 2020</div>
+          <div className="text-white sm:text-sm text-xs">© UNDERYOURSKINSTHLM 2020</div>
         </div>
 
-        <div className="flex space-x-8">
+        <div className="flex space-x-8 w-full justify-between sm:mt-0 mt-2">
           <div
             className="text-white text-sm cursor-pointer"
             onClick={openModal}
@@ -79,8 +79,9 @@ export default function Footer() {
                   <p>&nbsp;</p>
                   <p>&nbsp;</p>
                 </div>
-
-                <XIcon className="absolute right-3 top-3 w-5 h-5 cursor-pointer" onClick={closeModal} />
+                <button className="absolute right-3 top-3 w-5 h-5" onClick={closeModal}>
+                  <XIcon className="w-full h-full" />
+                </button>
               </div>
             </Transition.Child>
           </div>
