@@ -2,9 +2,15 @@ import React from 'react'
 import { reviewcards } from '../../../mockdata/landing/reviewsection'
 import CustomSlider from './CustomSlider'
 import ReviewCard from './ReviewCard'
-// import {} from "@appnest/masonry-layout"
+import Masonry from 'react-masonry-css'
 
 export default function ReviewSection() {
+  const breakpointColumnsObj = {
+    default: 4,
+    1100: 3,
+    700: 2,
+    500: 1
+  };
   return (
     <>
     <div className="w-full px-20 py-12 container mx-auto text-center">
@@ -18,13 +24,17 @@ export default function ReviewSection() {
       <div className="my-12 text-2xl font-light">10 customer reviews</div>
     </div>
     <div className="w-full">
-      {/* <masonry-layout cols="5" gap={20}>
+      <Masonry
+        breakpointCols={breakpointColumnsObj}
+        className="my-masonry-grid"
+        columnClassName="my-masonry-grid_column"
+      >
         {
           reviewcards.map((item, index) => (
             <ReviewCard key={`reviewcard-${index}`} data={item} />
           ))
         }
-      </masonry-layout> */}
+      </Masonry>
     </div>
     </>
   )

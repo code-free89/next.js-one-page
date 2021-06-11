@@ -12,9 +12,6 @@ import {
 export default function RevolutionSection() {
   const [openVideo, setopenVideo] = useState(false);
 
-  const videoOpen = () => {
-    setopenVideo(true);
-  }
   return (
     <div className="text-center">
       <div className="py-12 pb-80">

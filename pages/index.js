@@ -92,7 +92,7 @@ export default function Home() {
         <RevolutionSection />
       </section>
 
-      <section id="reviews" ref={reviewsref}>
+      <section id="reviews" ref={reviewsref} className="max-w-1920 mx-auto px-8">
         <ReviewSection />
       </section>
 
