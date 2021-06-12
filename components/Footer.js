@@ -14,8 +14,8 @@ export default function Footer() {
   }
   return (
     <div className="bg-black">
-      <div className="px-20 py-8 container mx-auto flex sm:flex-nowrap flex-wrap items-center justify-between">
-        <div className="flex items-center space-x-8 w-full justify-between">
+      <div className="px-20 py-8 container mx-auto sm:flex items-center justify-between">
+        <div className="flex items-center space-x-8 w-full sm:justify-start justify-between">
           <img
             alt=""
             src={
@@ -26,7 +26,7 @@ export default function Footer() {
           <div className="text-white sm:text-sm text-xs">© UNDERYOURSKINSTHLM 2020</div>
         </div>
 
-        <div className="flex space-x-8 w-full justify-between sm:mt-0 mt-2">
+        <div className="flex space-x-8 w-full sm:justify-end justify-between sm:mt-0 mt-2">
           <div
             className="text-white text-sm cursor-pointer"
             onClick={openModal}
