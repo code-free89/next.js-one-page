@@ -1,5 +1,5 @@
 import React from 'react'
-import { product_details, review } from '../../../mockdata/herosection'
+import { product_details, review } from '../../../mockdata/landing/herosection'
 import CustomButton from '../../common/Button'
 import StarRating from '../../common/StarRating'
 import PaymentGateways from './PaymentGateways'

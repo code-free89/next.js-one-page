@@ -1,5 +1,5 @@
 import React from 'react'
-import { paymentGateways } from '../../../mockdata/herosection'
+import { paymentGateways } from '../../../mockdata/landing/herosection'
 
 export default function PaymentGateways() {
   return (

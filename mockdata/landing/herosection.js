@@ -1,9 +1,10 @@
 export const product_details = {
   mockupImages: [
-    'assets/images/hero/carousel/HERO_IMAGE_-_Image_1_660x.png',
-    'assets/images/hero/carousel/Image_2_660x.jpeg',
-    'assets/images/hero/carousel/Image_4_660x.jpg',
-    'assets/images/hero/carousel/Image_5_ENG_660x.png',
+    'hero/HERO_IMAGE_-_Image_1_660x_YVfBM4eEX3k.png',
+    'hero/Image_4_660x_mckEC_ym8Cb.jpg',
+    'hero/Image_2_660x_NOO_vXITc.jpeg',
+    'hero/Image_6_660x_AKFtM31VV3A.png',
+    'hero/Image_5_ENG_660x_ieeleh9kv.png',
   ],
   reviews: 137,
   title: "Organic Detox: Shampoo & Conditioner",

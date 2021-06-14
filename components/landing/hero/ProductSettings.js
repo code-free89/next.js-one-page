@@ -1,5 +1,5 @@
 import React from 'react'
-import { productSettings, product_details } from '../../../mockdata/herosection'
+import { productSettings, product_details } from '../../../mockdata/landing/herosection'
 import ProductSetting from './Setting'
 
 export default function ProductSettings() {

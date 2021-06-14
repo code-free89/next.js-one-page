@@ -1,7 +1,7 @@
 import { Disclosure, Transition } from '@headlessui/react'
 import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/outline'
 import React from 'react'
-import { product_details } from '../../../mockdata/herosection'
+import { product_details } from '../../../mockdata/landing/herosection'
 import { ingredients } from '../../../mockdata/landing/ingredientsection'
 import CustomButton from '../../common/Button'
 import StarRating from '../../common/StarRating'

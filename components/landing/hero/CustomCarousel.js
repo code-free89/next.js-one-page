@@ -1,9 +1,37 @@
-import React, { useState } from "react";
-import { product_details } from "../../../mockdata/herosection";
+import React, { useState, useEffect } from "react";
+import { product_details } from "../../../mockdata/landing/herosection";
 import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/outline";
 import Slider from "react-slick";
 
 export default function CustomCarousel() {
+  const [windowSize, setWindowSize] = useState({
+    width: undefined,
+    height: undefined,
+  })
+
+  useEffect(() => {
+    // only execute all the code below in client side
+    if (typeof window !== 'undefined') {
+      // Handler to call on window resize
+      function handleResize() {
+        // Set window width/height to state
+        setWindowSize({
+          width: window.innerWidth,
+          height: window.innerHeight,
+        });
+      }
+    
+      // Add event listener
+      window.addEventListener("resize", handleResize);
+     
+      // Call handler right away so state gets updated with initial window size
+      handleResize();
+    
+      // Remove event listener on cleanup
+      return () => window.removeEventListener("resize", handleResize);
+    }
+  }, []);
+
   const [mainslider, setmainslider] = useState();
   const [thumbnailslider, setthumbnailslider] = useState();
 
@@ -64,7 +92,7 @@ export default function CustomCarousel() {
           {
             product_details.mockupImages.map((item, index) => (
               <div key={`main-slider-${index}`} className="w-full sm:h-600 h-80">
-                <img alt="" src={item} className="h-full mx-auto" />
+                <img alt="" src={`${process.env.ImageKitURL}/${windowSize.width > 600 ? 'tr:h-600' : 'tr:h-320'}/${item}`} className="h-full mx-auto" />
               </div>
             ))
           }
@@ -78,7 +106,8 @@ export default function CustomCarousel() {
           {
             product_details.mockupImages.map((item, index) => (
               <div key={`main-slider-${index}`} className="w-full">
-                <img alt="" src={item} className="sm:w-20 sm:h-20 w-12 h-12 mx-auto" />
+                <img alt="" src={`${process.env.ImageKitURL}/${windowSize.width > 600 ? 'tr:h-80,w-80' : 'tr:h-48,w-48'}/${item}`} className="mx-auto" />
+                {/* <img alt="" src={item} className="sm:w-20 sm:h-20 w-12 h-12 mx-auto" /> */}
               </div>
             ))
           }

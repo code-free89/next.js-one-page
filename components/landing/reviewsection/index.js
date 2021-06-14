@@ -70,7 +70,7 @@ export default function ReviewSection() {
             columnClassName="my-masonry-grid_column"
           >
             {reviewcards.map((item, index) => (
-              <ReviewCard key={`reviewcard-${index}`} data={item} />
+              <ReviewCard key={`reviewcard-${index}`} data={item} screenWidth={windowSize.width} />
             ))}
           </Masonry>
         </div>
@@ -80,7 +80,7 @@ export default function ReviewSection() {
           <Slider {...settings}>
             {
               reviewcards.map((item, index) => (
-                <ReviewCard key={`reviewcard-${index}`} data={item} />
+                <ReviewCard key={`reviewcard-${index}`} data={item} screenWidth={windowSize.width} />
               ))
             }
           </Slider>
